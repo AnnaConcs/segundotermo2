@@ -2,9 +2,9 @@
 -- SmartCoffe base de dados - dml
 -- execute sempre que quiser restaurar a aula
 
-drop database if exists SmartCoffe_dml_Anna;
-create database SmartCoffe_dml_Anna;
-use SmartCoffe_dml_Anna;
+drop database if exists SmartCoffe_dml_anna;
+create database SmartCoffe_dml_anna;
+use SmartCoffe_dml_anna;
 
 create table cliente (
     id_cliente int primary key auto_increment,

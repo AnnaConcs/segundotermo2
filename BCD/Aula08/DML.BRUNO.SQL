@@ -1,3 +1,4 @@
+-- Active: 1788351693696@@127.0.0.1@3306@smartcoffee_dml_bruno
 -- ============================================================
 -- SMARTCOFFEE - BASE DE DADOS PARA AULA 08 - DML
 -- MySQL 8+
@@ -169,3 +170,18 @@ UPDATE cliente
 SET telefone = NULL
 WHERE id_cliente = 5;
 -- TUDO ATUALIZAÇÕES OU MODIFICAÇÕES DE DADOS
+
+
+-- PLANO A - INSERT
+
+INSERT INTO cliente (nome, email, telefone, cidade, ativo) VALUES
+('Nathalia', 'nath@email.com', '1999996373001', 'Limeira', TRUE),
+('Fabiana', 'fabi@email.com', '19269990002', 'Limeira', TRUE);
+
+CREATE TABLE Especiais da Casa (
+    id_categoria INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(60) NOT NULL UNIQUE
+)
+
+INSERT INTO Especiais da Casa (nome) VALUES
+('Lanche'), ('Bebidas Quentes'), ('Tortas'), ('Bolos'), ('Promocoes');
